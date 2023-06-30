@@ -1,0 +1,512 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,h1,h2,h3,h4,ul,ol,dl,li,dt,dd,p,div,span,img,a,table,tr,th,td{
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight: normal;
+	vertical-align:baseline;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+html{
+	font-size: 62.5%; /*10px*/
+	margin: 0px;
+}
+body{line-height: 1;}
+ol,ul{
+	list-style: none;
+	list-style-type: none;
+}
+a:hover{
+	opacity: 0.5;
+}
+
+.close{display: none;}
+
+/*====================
+		モバイル表示
+====================*/
+@media screen and (max-width : 965px){
+	body{
+		margin: 0px;
+		font-size: 1.2rem;
+		font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	}
+	h2{
+		display: inline-block;
+		width: 100%;
+		font-size: 3rem;
+		font-family:"TBカリグラゴシック Std E",sans-serif;
+	}
+	h3{
+		display: inline-block;
+		font-size: 2rem;
+		font-family:"TBカリグラゴシック Std E",sans-serif;
+	}
+	.top{
+		text-align: center;
+		background-color: #F7E8DB;
+	}
+	.top img{width: 375px;}
+	.navigation ul{
+		text-align: center;
+		background-color:#2B48B5;
+	}
+	.navigation li{
+		display: inline-block;
+		vertical-align: top;
+		width: 75px;
+		height: 20px;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		background-color: #E7E7E7;
+		font-size: 1.2rem;
+		color: #000000;
+		text-decoration: none;
+	}
+	.contentArea{
+		width: 375px;
+		margin: 0 auto 6.73% auto;
+		overflow: hidden;
+	}
+	img.mobile{
+		display: inline-block;
+		vertical-align: bottom;
+		width: 32%;
+		margin-top: 5.33%;
+		margin-left: 12%;
+	}
+	ul.personalInformation{display: inline-block;}
+	ul.personalInformation li{font-size: 1.4rem;}
+	ul.personalInformation li p.kanji{font-size: 2.5rem;}
+	ul.personalInformation li.birthAndMail{margin-top: 5.33%;}
+	
+	#profile{margin-top: 7.25%;}
+	img.PC{display: none;}
+	#profile .self-introduction p{
+		display: inline-block;
+		width: 94%; 
+		padding: 1.55%;
+		letter-spacing: 0.5rem;
+		line-height: 2rem;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	
+	.hobby div{
+		padding: 1.55% 1.55% 0.5% 1.55%; /*15px 5px*/
+		line-height: 2rem;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	.hobby div h4{font-size: 1.5rem;}
+	.hobby div p{
+		margin-bottom: 1.04%;
+		padding-left: 2.07%;
+	}
+	
+	.timeAndMyself{
+		margin-top: 5.18%;
+	}
+	.timeLine{
+		display: inline-block;
+		width: 100%;
+		vertical-align: top;
+		margin-top: 2.07%;
+	}
+	.timeLine table{
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #6699ff;
+		margin-bottom: 2.07%;
+	}
+	.timeLine table th,.timeLine table td{
+		margin: 1.04%;
+		border-collapse: separate;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		padding: 1.04%; 
+		background-color: #e9fdfd;
+	}
+	.timeLine table th{width: 18.63%;} 
+	.timeLine table td{width: 81.37%;}
+	.timeLine_scroll{
+		line-height: 2rem;
+		color: #FF0004;
+		text-decoration: none;
+	}
+	.timeLine table td ul{
+		list-style: inside;
+		line-height: 2rem;
+	}
+	
+	.aboutMyself{
+		display: inline-block;
+		width: 100%;
+	}
+	.aboutMyself table{
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #6699ff;
+		margin-bottom: 2.07%; 
+	}
+	.aboutMyself table tr th,.aboutMyself table tr td{
+		margin: 1.04%; 
+		padding: 1.04%;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	.aboutMyself table tr th{width: 18.63%;}  
+	.aboutMyself table tr td{
+		width: 81.37%; 
+		line-height: 2rem;
+	} 
+	.aboutMyself table tr td p{padding-left: 1.27%} /*10px*/
+	
+	#skill{
+		width: 100%;
+		margin-top: 7.25%;
+	} 
+	#skill h3{
+		width: 100%;
+		text-align: center;  
+		margin-top: 3.11%;
+	}
+	#skill table{
+		width: 100%; 
+		margin: 0px auto 0px auto;
+		border-collapse: collapse;
+	}
+	#skill table th{
+		text-align: left;
+		font-size: 1.6rem;
+		width: 66.67%; 
+		padding: 1.67% 1.67% 0px 1.67%;  
+		border-style: solid; border-width: 5px;
+		border-bottom: none;
+		border-right: none;
+		border-color: #6699ff;
+		background-color: #FFFFFF;
+	}
+	#skill table td{
+		padding: 1.67% 1.67% 1.67% 1.67%;
+		border-style: solid; border-width: 5px;
+		border-top: none;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	#skill table td.evaluation{
+		border-style: solid; border-width: 5px;
+		border-bottom: none;
+		border-left: none;
+		border-color: #6699ff;
+		background-color: #FFFFFF;
+		font-size: 1.6rem;
+	}
+	#skill .license table{
+		width: 100%;
+		text-align: center;
+		margin-top: 2.07%; 
+	}
+	#skill .license table td{
+		border-style: solid; border-width: 5px;
+		text-align: center;
+		width: 33.33%;
+	}
+	
+	#vision{margin-top: 7.25%;} 
+	#vision p{
+		padding: 1.04%; 
+		letter-spacing: 0.5rem;
+		line-height: 2rem;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	
+
+	#workIntroduction{margin-top: 7.25%;} 
+	#workIntroduction ul{text-align: center;}
+	#workIntroduction ul li.work{
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+		background-color: #e9fdfd;
+		margin-top: 2.67%;
+	}
+	#workIntroduction ul li.work ul li{
+		text-align: center;
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+	#workIntroduction ul li.work ul li img{width: 100%;}
+	#workIntroduction ul li.work ul li.title{
+		font-size: 1rem;
+		line-height: 2rem;
+		background-color:#FCE6E7;
+	}
+	
+	#styleAndArea{margin-top: 7.25%;} 
+	#styleAndArea p{
+		padding: 1.04%; 
+		letter-spacing: 0.5rem;
+		line-height: 2rem;
+		border-style: solid; border-width: 5px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	#styleAndArea img{
+		width: 100%;
+		margin-top: 5.33%;
+	}
+}
+/*====================
+		PC表示
+====================*/
+@media screen and (min-width: 966px){
+	body{
+		margin: 0px;
+		font-size: 1.6rem;
+		font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	}
+	h2{
+		display: inline-block;
+		width: 100%;
+		font-size: 4.8rem;
+		font-family:"TBカリグラゴシック Std E",sans-serif;
+	}
+	h3{
+		display: inline-block;
+		font-size: 3.6rem;
+		font-family:"TBカリグラゴシック Std E",sans-serif;
+	}
+	.top{
+		text-align: center;
+		background-color: #F7E8DB;
+	}
+	.navigation ul{
+		text-align: center;
+		background-color:#2B48B5;
+	}
+	.navigation li{
+		display: inline-block;
+		width: 193px;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		background-color: #E7E7E7;
+		font-size: 2rem;
+		color: #000000;
+		text-decoration: none;
+	}
+	.contentArea{
+		width: 966px;
+		margin: 0 auto 6.73% auto; /*65px*/
+		overflow: hidden;
+	}
+	ul.personalInformation{margin-top: 7.25%; /*70px*/}
+	ul.personalInformation li{
+		display: inline-block;
+	}
+	ul.personalInformation li p.kanji{
+		font-size: 4rem;
+	}
+	ul.personalInformation li p.romaji{
+		font-size: 3rem;
+	}
+	ul.personalInformation li.birthAndMail{
+		text-align: right;
+		font-size: 2rem;
+		margin-left: 44.51%; /*430px*/
+	}
+
+	img.mobile{display: none;}
+	
+	#profile{margin-top: 7.25%;}
+	#profile img{
+		vertical-align: bottom;
+		width: 25.88%; /*250px*/
+	}
+	#profile .self-introduction p{
+		display: inline-block;
+		width: 63.77%; /*616px*/
+		margin-left: 5.18%; /*50px*/
+		padding: 1.55%; /*15px*/
+		letter-spacing: 0.5rem;
+		line-height: 2.5rem;
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	
+	.hobby div{
+		padding: 1.55% 1.55% 0.5% 1.55%; /*15px 5px*/
+		line-height: 2.5rem;
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	.hobby div h4{font-size: 2rem;}
+	.hobby div p{
+		margin-bottom: 1.04%;
+		padding-left: 2.07%;
+	}
+	
+	.timeAndMyself{
+		margin-top: 5.18%; /*50px*/
+	}
+	.timeLine{
+		display: inline-block;
+		width: 100%;
+		margin-top: 2.07%;
+		vertical-align: top;
+	}
+	.timeLine table{
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #6699ff;
+		margin-bottom: 2.07%; /*20px*/
+	}
+	.timeLine table th,.timeLine table td{
+		margin: 1.04%; /*10px*/
+		border-collapse: separate;
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		padding: 1.04%; /*10px*/
+		background-color: #e9fdfd;
+	}
+	.timeLine table th{width: 18.63%;} /*180px*/
+	.timeLine table td{width: 81.37%;} /*786px*/
+	.timeLine_scroll{
+		line-height: 3.5rem;
+		color: #FF0004;
+		text-decoration: none;
+	}
+	.timeLine table td ul{
+		list-style: inside;
+		line-height: 2.5rem;
+	}
+	
+	.aboutMyself{
+		display: inline-block;
+		width: 100%;
+	}
+	.aboutMyself table{
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #6699ff;
+		margin-bottom: 2.07%; /*20px*/
+	}
+	.aboutMyself table tr th,.aboutMyself table tr td{
+		margin: 1.04%; /*10px*/
+		padding: 1.04%; /*10px*/
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	.aboutMyself table tr th{width: 18.63%;}  /*180px*/
+	.aboutMyself table tr td{
+		width: 81.37%; /*786px*/
+		line-height: 2.5rem;
+	} 
+	.aboutMyself table tr td p{padding-left: 1.27%} /*10px*/
+	
+	#skill{
+		width: 100%;
+		margin-top: 7.25%;
+	} /*70px*/
+	#skill h3{
+		width: 100%;
+		text-align: center;  /*30px*/
+		margin-top: 3.11%;
+	}
+	#skill table{
+		width: 62.11%; /*600px*/
+		margin: 0px auto 0px auto;
+		border-collapse: collapse;
+	}
+	#skill table th{
+		text-align: left;
+		font-size: 2rem;
+		width: 80%; /*500px*/
+		padding: 1.67% 1.67% 0px 1.67%;  /*10px*/
+		border-style: solid; border-width: 10px;
+		border-bottom: none;
+		border-right: none;
+		border-color: #6699ff;
+		background-color: #FFFFFF;
+	}
+	#skill table td{
+		padding: 1.67% 1.67% 1.67% 1.67%;
+		border-style: solid; border-width: 10px;
+		border-top: none;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	#skill table td.evaluation{
+		border-style: solid; border-width: 10px;
+		border-bottom: none;
+		border-left: none;
+		border-color: #6699ff;
+		background-color: #FFFFFF;
+		width: 20%; /*100px*/
+		font-size: 2rem;
+	}
+	#skill .license table{
+		width: 70.39%; /*680px*/
+		text-align: center;
+		margin-top: 2.07%; /*20px*/
+	}
+	#skill .license table td{
+		border-style: solid; border-width: 10px;
+		text-align: center;
+		width: 20.70%; /*200px*/
+	}
+	
+	#vision{margin-top: 7.25%;} /*70px*/
+	#vision p{
+		padding: 1.04%; /*70px*/
+		letter-spacing: 0.5rem;
+		line-height: 2.5rem;
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	
+	#workIntroduction{margin-top: 1.04%;} /*70px*/
+	#workIntroduction ul{text-align: center;}
+	#workIntroduction ul li.work{
+		display: inline-block;
+		vertical-align: top;
+		width: 30.23%; /*292px*/
+		height: 48.34%; /*467px*/
+		margin: 0px 1.04% 0px 1.04%; /*10px*/
+		background-color: #e9fdfd;
+	}
+	#workIntroduction ul li.work ul li{
+		text-align: center;
+		font-size: 1.2rem;
+		line-height: 3rem;
+	}
+	#workIntroduction ul li.work ul li.title{
+		font-size: 1.8rem;
+		line-height: 4rem;
+		background-color:#FCE6E7;
+	}
+	
+	#styleAndArea{margin-top: 7.25%;} /*70px*/
+	#styleAndArea p{
+		padding: 1.04%; /*10px*/
+		letter-spacing: 0.5rem;
+		line-height: 2rem;
+		border-style: solid; border-width: 10px;
+		border-color: #6699ff;
+		background-color: #e9fdfd;
+	}
+	#styleAndArea img{
+		width: 79.3%; /*766*/
+		margin: 5.18% 10.35% 5.18% 10.35%; /*50px*/ /*100px*/
+	}
+}
